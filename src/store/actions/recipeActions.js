@@ -13,7 +13,7 @@ export const asyncLoadRecipes = () => async (dispatch, getState) => {
 
 export const asyncCreateRecipe = (recipe) => async (dispatch, getState) => {
     try {
-        await axios.post("/recipes", recipe); //db
+        await axios.post("/recipes", recipe); 
         dispatch(asyncLoadRecipes());
         console.log("Recipe is Created successfully!");
     } catch (error) {

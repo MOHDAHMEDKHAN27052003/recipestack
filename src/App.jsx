@@ -16,13 +16,9 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Recipes />}/>
-
           <Route path="/create-recipe" element={<CreateRecipe />}/>
-
           <Route path="/favorites" element={<Favorites />}/>
-
           <Route path="/recipe/:id" element={<Recipe />}/>
-
           <Route path="*" element={<PageNotFound />}/>
         </Routes>
       </div>
