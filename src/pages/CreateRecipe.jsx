@@ -30,11 +30,13 @@ function CreateRecipe() {
     return (
         <>
             <div className="flex justify-center px-8 py-12">
-                <form onSubmit={handleSubmit(onSubmit,onError)} className="bg-amber-600 rounded-2xl p-8 text-white">
+                <form
+                    onSubmit={handleSubmit(onSubmit, onError)}
+                    className="bg-amber-600 rounded-2xl p-8 text-white">
                     <h1 className="text-2xl">Create Recipe</h1>
                     <div className="pt-4">
                         <label htmlFor="image">
-                            Image
+                            Image URL
                             <input
                                 type="url"
                                 name="image"
@@ -52,7 +54,6 @@ function CreateRecipe() {
                                 />
                             </div>
                         )}
-
                     </div>
                     <div className="pt-4">
                         <label htmlFor="title">

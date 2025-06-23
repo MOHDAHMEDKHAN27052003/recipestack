@@ -46,7 +46,7 @@ const Recipes = () => {
             <div className="text-right p-8">
                 <Link to={"/create-recipe"} className="bg-amber-400 text-white p-2 rounded-lg">Create Recipe</Link>
             </div>
-            <div className="p-8 md:p-20 lg:p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-12">
+            <div className="p-8 md:p-20 lg:p-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-12">
                 {recipes.map((recipe, index) => (
                     <Suspense key={index} fallback={<h1>LOADING...</h1>}>
                         <Card recipe={recipe} />
