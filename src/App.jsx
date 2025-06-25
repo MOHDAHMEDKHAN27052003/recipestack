@@ -5,7 +5,6 @@ import Nav from "./components/Nav";
 import Recipes from "./pages/Recipes";
 
 const Recipe = lazy(() => import("./pages/Recipe"));
-const Favorites = lazy(() => import("./pages/Favorites"));
 const CreateRecipe = lazy(() => import("./pages/CreateRecipe"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
